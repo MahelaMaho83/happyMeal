@@ -1,0 +1,255 @@
+/* Styles de base pour toute l'application */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+/* Section de recherche */
+.search-bar {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#search {
+    width: 80%;
+    padding: 8px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#search-btn {
+    padding: 8px 15px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-btn:hover {
+    background-color: #45a049;
+}
+
+/* Section des recettes */
+.recettes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.recipe-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: auto;
+}
+
+.recipe-card-content {
+    padding: 15px;
+}
+
+.recipe-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.recipe-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Pagination */
+#pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#pagination button {
+    margin: 0 10px;
+}
+
+/* Détail de la recette */
+#recipe-detail {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#ingredients-list, #steps-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#ingredients-list li, #steps-list li {
+    margin-bottom: 10px;
+}
+
+#ingredients-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#ingredients-list li button {
+    background-color: #f44336;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#ingredients-list li button:hover {
+    background-color: #d32f2f;
+}
+
+#add-favorites {
+    margin-top: 20px;
+}
+
+/* Liste de courses */
+#shopping-list-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#shopping-list-container ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#shopping-list-container ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#shopping-list-container button {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#shopping-list-container button:hover {
+    background-color: #1976D2;
+}
+
+/* Planning des repas */
+#planning-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+#planning-container h3 {
+    margin-bottom: 20px;
+}
+
+#planning-container .day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#planning-container .day button {
+    background-color: #FFC107;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#planning-container .day button:hover {
+    background-color: #FF9800;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
