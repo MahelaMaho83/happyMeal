@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyMeal - Accueil</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>HappyMeal</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="recipes.html">Recettes</a></li>
+                <li><a href="shoppingList.html">Liste de courses</a></li>
+                <li><a href="mealPlanner.html">Planning</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="search">
+            <input type="text" id="searchBar" placeholder="Rechercher une recette ou un ingrédient...">
+            <ul id="searchResults"></ul>
+        </section>
+        
+        <section id="random-recipes">
+            <h2>Recettes du jour</h2>
+            <div id="recipesContainer"></div>
+        </section>
+    </main>
+    
+    <script src="scripts/app.js"></script>
+</body>
+</html>
