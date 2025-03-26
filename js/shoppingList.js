@@ -1,4 +1,4 @@
-// shoppingList.js
+// shoppingList.js gestion de la liste de courses
 
 let listeCourses = JSON.parse(localStorage.getItem("listeCourses")) || []; // Récupère la liste de courses depuis le localStorage
 

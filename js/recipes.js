@@ -1,4 +1,4 @@
-// recipes.js
+// recipes.js gestion des recettes
 
 let recettes = [];  // Tableau contenant toutes les recettes
 
