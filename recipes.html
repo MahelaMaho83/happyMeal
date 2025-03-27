@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HappyMeal - Liste des Recettes</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <title>HappyMeal - Planning des Repas</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
     <header>
-        <h1>Liste des Recettes</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#planning-container">Planning</a></li>
+                <li><a href="#recettes-container">Recettes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Planification des Repas</h1>
     </header>
 
-    <div class="recettes-container" id="recipes-list">
-        <!-- Les recettes seront chargées ici dynamiquement -->
+    <div id="planning-container" class="container">
+        <h2>Votre Planning</h2>
+        <!-- Le planning des repas sera chargé ici dynamiquement -->
     </div>
 
-    <div id="pagination">
-        <button id="prev-page">Précédent</button>
-        <button id="next-page">Suivant</button>
-    </div>
+    <main>
+        <section id="recettes-container" class="container">
+            <h2>Recettes Disponibles</h2>
+            <button id="add-recipe-btn" class="btn">Ajouter une Recette</button>
+            <!-- Les recettes seront chargées ici dynamiquement -->
+        </section>
+    </main>
 
-    <footer>
+    <footer id="contact">
         <p>&copy; 2025 HappyMeal. Tous droits réservés.</p>
     </footer>
 
-    <script src="scripts/app.js"></script>
+    <script src="scripts/mealPlanner.js"></script>
+    <script src="./js/recipes.js"></script>
 </body>
 </html>

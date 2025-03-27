@@ -25,7 +25,6 @@ header {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-
 /* Barre de recherche */
 .search-bar {
     max-width: 600px;
@@ -75,36 +74,41 @@ header {
     background: white;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Ombre plus marquée */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 20px; /* Ajout de marges pour espacer les cards */
 }
 
 .recipe-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4); /* Ombre plus intense au survol */
 }
 
 .recipe-card img {
     width: 100%;
-    height: 220px;
+    height: 250px; /* Augmentation de la hauteur pour une meilleure visibilité */
     object-fit: cover;
+    border-bottom: 5px solid #e63946; /* Ajout d'une bordure colorée en bas de l'image */
 }
 
 .recipe-card-content {
-    padding: 20px;
+    padding: 25px; /* Augmentation du padding pour un contenu plus espacé */
     text-align: center;
 }
 
 .recipe-card h3 {
-    font-size: 1.7rem;
+    font-size: 1.8rem; /* Taille de police légèrement augmentée */
     color: #222;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 700; /* Texte plus gras pour une meilleure lisibilité */
+    margin-bottom: 15px; /* Espacement supplémentaire sous le titre */
 }
 
 .recipe-card p {
-    font-size: 1.1rem;
-    color: #666;
+    font-size: 1.2rem; /* Taille de police augmentée */
+    color: #555; /* Couleur légèrement plus foncée */
     font-family: 'Poppins', sans-serif;
+    line-height: 1.8; /* Meilleure lisibilité avec un interligne plus grand */
 }
 
 button {
